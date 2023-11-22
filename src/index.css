@@ -39,3 +39,7 @@ code {
     align-items: center;
     justify-content: flex-start;
 }
+
+.cotization-button {
+  height: 3rem;
+}

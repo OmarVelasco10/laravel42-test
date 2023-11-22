@@ -35,7 +35,7 @@ export const Cotization = () => {
             <span className="font-bold"> TAEG {cotizations[0].taeg}</span>
           </p>
         </div>
-        <button className="bg-yellow-500 p-2 px-16 rounded-full text-lg font-bold sm:mt-0.5 sm:mr-0.5 shadow-xl lg:shadow-none hover:bg-yellow-400">
+        <button className="bg-yellow-500 p-2 px-16 rounded-full text-lg font-bold sm:mt-0.5 sm:mr-0.5 shadow-xl lg:shadow-none hover:bg-yellow-400 xl:h-14">
           Continua
         </button>
       </div>
@@ -45,27 +45,22 @@ export const Cotization = () => {
           (item: any, index: any) =>
             index !== 0 && (
               <div className="border-2 border-black rounded-full flex items-center justify-between">
-                <div className="w-1/3 p-4 border-2 rounded-l-full flex justify-between">
-                  <p className="font-bold text-xl">{priceSend} €</p>
+                <div className="w-1/3 p-4 border-r-2 border-black-500 rounded-l-full flex justify-between items-center">
+                  <strong className="xl:ml-10 0  whitespace-no-wrap text-xl">{priceSend} €</strong>
                   <Link className="text-xl" to="/">
                     Secci
                   </Link>
                 </div>
                 <div>
                   <p className="text-lg">
-                    <span className="font-bold">
-                      {item.imp_rata} €{" "}
-                    </span>
+                    <span className="font-bold">{item.imp_rata} € </span>
                     per
                     <span className="font-bold"> {item.rate} </span>
                     mesi
-                    <span className="font-bold">
-                      {" "}
-                      TAEG {item.taeg}
-                    </span>
+                    <span className="font-bold"> TAEG {item.taeg}</span>
                   </p>
                 </div>
-                <button className="bg-yellow-500 p-2 px-16 rounded-full text-lg font-bold sm:mt-0.5 sm:mr-0.5 shadow-xl lg:shadow-none hover:bg-yellow-400">
+                <button className="bg-yellow-500 p-2 px-16 rounded-full text-lg font-bold sm:mt-0.5 sm:mr-0.5 shadow-xl lg:shadow-none hover:bg-yellow-400 xl:h-14">
                   Continua
                 </button>
               </div>
