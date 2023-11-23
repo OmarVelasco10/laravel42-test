@@ -43,3 +43,12 @@ code {
 .cotization-button {
   height: 3rem;
 }
+
+.card-cotization {
+  position: relative;
+}
+
+.card-cotization .card-container-button {
+  position: absolute;
+  
+}
